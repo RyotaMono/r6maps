@@ -19,6 +19,7 @@ install_dependencies:
   script:
    - npm install uglify-js -g
    - gem install sass
+   - gem install scss
 
 build_website:
   stage: build
