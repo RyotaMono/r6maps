@@ -14,16 +14,11 @@ cache:
   paths:
   - node_modules/
 
-install_dependencies:
+build:
   stage: build
   script:
    - npm install uglify-js -g
    - gem install sass
-   - gem install scss
-
-build_website:
-  stage: build
-  script:
    - npm install
    - npm run build
 
